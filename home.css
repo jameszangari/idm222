@@ -258,6 +258,7 @@ body {
 .artist-grid {
     display: flex;
     flex-flow: row wrap;
+    padding-top: 3rem;
 }
 
 .footer {
@@ -277,31 +278,31 @@ img.cover_art {
 img.cardinalsin {
     height: 55px;
     width: 55px;
-    padding: 1em;
+    padding: 0em 2em;
   }
   
   img.catullus {
     height: 45px;
     width: 65px;
-    padding: 1em;
+    padding: 0em 2em;
   }
   
   img.jamescliff {
     height: 55px;
     width: 55px;
-    padding: 1em;
+    padding: 0em 2em;
   }
   
   img.locke {
     height: 70px;
     width: 30px;
-    padding: 1em;
+    padding: 0em 2em;
   }
   
   img.nahom {
     height: 55px;
     width: 55px;
-    padding: 1em;
+    padding: 0em 2em;
   }
 
 
