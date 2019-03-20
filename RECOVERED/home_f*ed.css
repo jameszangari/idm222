@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css?family=Staatliches");
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
+
+html,
+body {
+  background: #000000;
+}
+
+html {
+  font-size: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.footer {
+    background: #000000;
+}
+
+.nav {
+    display: flex;
+    background-color: #000000;
+    font-family: Staatliches;
+    font-size: 18px;
+    text-decoration: none;
+    justify-content: space-between;
+    padding: 0% 0% 0% 0%;
+  }
+  
+  ul.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #222222;
+    opacity: 1;
+    transition: 0.3s;
+  }
+
+/* MOBILE CONFIGURATION */
+
+@media only screen and (max-width: 768px) {
+
+/*.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:    "header   header   header"
+                            "main     main     sidebar"
+                            "footer   footer   footer";
+}*/
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: space-around;
+}
+
+/*.grid-header {
+    grid-column-end: 3;
+    justify-self: center;
+}*/
+
+.urlogo {
+    height: auto;
+    width: 100%;
+    padding: 20% 0% 20% 0%;
+}
+
+/*.grid-video {
+    grid-row-start: 2;
+    grid-row-end: span 3;
+    grid-column-start: 2;
+}*/
+
+.grid-table {
+    grid-row-start: 2;
+    grid-row-end: span 3;
+    grid-column-start: 2;
+    padding-top: 4em;
+}
+
+.musiclinks {
+    text-decoration-color: #ffffff;
+    color: #ffffff:
+}
+
+.video {
+    width: 75%;
+    padding: 15% 0% 30% 0%;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.home {
+    height: auto;
+    width: 5%;
+    padding: 5%;
+}
+
+.members {
+    height: auto;
+    width: 7%;
+    padding: 3.5%;
+}
+
+.music {
+    height: auto;
+    width: 5%;
+    padding: 5%;
+}
+
+.videos {
+    height: auto;
+    width: 5%;
+    padding: 5%;
+}
+
+.connect {
+    height: auto;
+    width: 5%;
+    padding: 5%;
+}
+
+.nav {
+    display: none;
+}
+
+}
+
+@media only screen and (min-width: 640px) {
+    .home {
+        height: auto;
+        width: 4%;
+        padding: 6%;
+    }
+
+    .members {
+        height: auto;
+        width: 5%;
+        padding: 5%;
+    }
+    
+    .music {
+        height: auto;
+        width: 4%;
+        padding: 6%;
+    }
+    
+    .videos {
+        height: auto;
+        width: 4%;
+        padding: 6%;
+    }
+    
+    .connect {
+        height: auto;
+        width: 4%;
+        padding: 6%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+.grid-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.urlogo {
+    height: auto;
+    width: 20%;
+    align-items: center;
+    padding: 3%;
+}
+
+div.grid-video  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+div.grid-table  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+video {
+    height: auto;
+    width: 35%;
+    padding: 3%;
+}
+
+.footer {
+    display: none;
+}
+
+}
+/* MEMBERS CSS BEGINS HERE */
+
+/* MEMBERS CSS STYLES */
+
+/* ARTIST LOGOS */
+img.cardinalsin {
+    height: 55px;
+    width: 55px;
+    padding: 1em;
+  }
+  
+  /*img.catullus {
+    height: 45px;
+    width: 255px;
+    padding: 1em;
+  }*/
+  
+  img.catullus {
+    height: 45px;
+    width: 65px;
+    padding: 1em;
+  }
+  
+  img.jamescliff {
+    height: 55px;
+    width: 55px;
+    padding: 1em;
+  }
+  
+  img.locke {
+    height: 70px;
+    width: 30px;
+    padding: 1em;
+  }
+  
+  img.nahom {
+    height: 55px;
+    width: 55px;
+    padding: 1em;
+  }
+  
+  /* LOGO STYLE */
+  ul#horizontal-list {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    align-content: center;
+    padding: 5%;
+  }
+  
+  #horizontal-list li a:hover {
+    background-color: #222222;
+    height: 70px;
+    width: 30px;
+    opacity: 1;
+    transition: 0.3s;
+  }

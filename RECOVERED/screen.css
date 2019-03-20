@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css?family=Staatliches");
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
+
+html,
+body {
+  overflow: hidden;
+  background: #000000;
+}
+
+html {
+  font-size: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  align-content: center;
+}
+
+.urlogo {
+  padding: 35% 0% 5% 0%;
+  width: 100px;
+}
+
+ul.nav {
+  display: flex;
+  background-color: #000000;
+  font-family: Staatliches;
+  font-size: 18px;
+  text-decoration: none;
+  justify-content: space-between;
+  padding: 0% 0% 0% 0%;
+}
+
+ul.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #222222;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+/*.footer {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 2rem;
+  font-family: Orbitron;
+  font-size: 75%;
+}*/
+
+/* MEMBERS CSS STYLES */
+
+/* ARTIST LOGOS */
+img.cardinalsin {
+  height: 55px;
+  width: 55px;
+  padding: 1em;
+}
+
+/*img.catullus {
+  height: 45px;
+  width: 255px;
+  padding: 1em;
+}*/
+
+img.catullus {
+  height: 45px;
+  width: 65px;
+  padding: 1em;
+}
+
+img.jamescliff {
+  height: 55px;
+  width: 55px;
+  padding: 1em;
+}
+
+img.locke {
+  height: 70px;
+  width: 30px;
+  padding: 1em;
+}
+
+img.nahom {
+  height: 55px;
+  width: 55px;
+  padding: 1em;
+}
+
+/* LOGO STYLE */
+ul#horizontal-list {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  align-content: center;
+  padding: 5%;
+}
+
+#horizontal-list li a:hover {
+  background-color: #222222;
+  height: 70px;
+  width: 30px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.navhome {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  background-color: #000000;
+  font-family: Staatliches;
+  font-size: 18px;
+  text-decoration: none;
+  justify-content: space-between;
+  padding: 0% 0% 0% 0%;
+}
+
+
+/* ANIMATION LOGO */
+
+img.ur-logo {
+  text-align: center;
+  display: block;
+  width: 100px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: -52px 120px 0px -48px;
+}
+
+div.effectwrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.hole {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+}
+
+/* New Tunnel Effect 2019 */
+i {
+  /* display: block; */
+  position: absolute;
+  width: 175px;
+  height: 165px;
+  left: -85px;
+  top: -80px;
+  border-radius: 55px;
+  opacity: 0;
+  animation-name: scale;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.25, -1.50, 0, 1.50);
+}
+
+i:nth-child(1) {
+  animation-delay: 1s;
+}
+
+i:nth-child(2) {
+  animation-delay: 2s;
+}
+
+i:nth-child(3) {
+  animation-delay: 3s;
+}
+
+i:nth-child(4) {
+  animation-delay: 4s;
+}
+
+i:nth-child(5) {
+  animation-delay: 5s;
+}
+
+i:nth-child(6) {
+  animation-delay: 6s;
+}
+
+i:nth-child(7) {
+  animation-delay: 7s;
+}
+
+i:nth-child(8) {
+  animation-delay: 8s;
+}
+
+i:nth-child(9) {
+  animation-delay: 9s;
+}
+
+i:nth-child(10) {
+  animation-delay: 10s;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(2);
+    opacity: 0;
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    transform: scale(1) translate(0px, -5px);
+    opacity: 1;
+    box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    transform: scale(0.1) translate(0px, 5px);
+    opacity: 0;
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0);
+  }
+}
+
+.splash-video {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%    !important;
+  height: 50%   !important;
+  padding: 2rem;
+}
+
+/* MOBILE CONFIGURATION */
+
+@media only screen and (max-width: 640px) {
+  body {
+    /* background-color: #000; */
+  }
+
+  .nav {
+    display: flex;
+    flex-flow: column wrap;
+  }
