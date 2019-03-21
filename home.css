@@ -35,7 +35,7 @@ img {
     display: grid;
     grid-gap: 15px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    padding: 2em;
+    padding: 3.5em;
 }
 
 .footer {
@@ -73,28 +73,33 @@ div.social-media {
 
 img.media-buttons {
     height: auto;
-    width: 5%;
-    padding: 2%;
+    width: 35%;
+}
+
+img.lg-media-buttons {
+    height: auto;
+    width: 15%;
+    padding: 20% 5% 0% 5%;
 }
 
 #insta {
     height: auto;
-    width: 5%;
+    width: 15%;
 }
 
 #twit {
     height: auto;
-    width: 5%;
+    width: 15%;
 }
 
 #spot {
     height: auto;
-    width: 5%;
+    width: 15%;
 }
 
 #sound {
     height: auto;
-    width: 5%;
+    width: 15%;
 }
 
 
@@ -112,7 +117,7 @@ img.media-buttons {
 .urlogo {
     height: auto;
     width: 25%;
-    padding: 10% 0% 5% 0%;
+    padding: 7% 0% 0% 0%;
 }
 
 .cover_art {
@@ -157,12 +162,28 @@ img.media-buttons {
     display: none;
 }
 
+.social-media-children {
+    /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+    filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+}
+
+.social-media-children:hover {
+    filter: none;
+      -webkit-filter: grayscale(0);
+}
+
 .artist-grid {
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    padding-top: 20%;
 }
+
+.artist-grid-children {
+    padding: 8% 10% 0% 10%;
+}    
 
 }
 
@@ -239,7 +260,7 @@ body {
 .gridcovers:hover {
     filter: none;
       -webkit-filter: grayscale(0);
-      -webkit-transform: scale(1.1);
+      -webkit-transform: scale(1.05);
 }
 
 .media-buttons {
@@ -253,6 +274,28 @@ body {
     filter: none;
       -webkit-filter: grayscale(0);
       -webkit-transform: scale(1.1);
+}
+
+.social-media-children {
+    /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+    filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+    -webkit-transition: all .4s ease-in-out;  
+}
+
+.social-media-children:hover {
+    filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.5);
+}
+
+.artist-grid-children {
+    -webkit-transition: all .4s ease-in-out;  
+}
+
+.artist-grid-children:hover {
+    filter: none;
+      -webkit-transform: scale(1.35);
 }
 
 .artist-grid {
@@ -271,6 +314,19 @@ img.cover_art {
     justify-content: center;
     height: auto;
     width: 75%;
+}
+
+.social-media {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+img.lg-media-buttons {
+    height: auto;
+    width: 35%;
+    padding: 20% 5% 0% 5%;
 }
 
 }
