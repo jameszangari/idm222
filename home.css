@@ -1,8 +1,26 @@
-@import url("https://fonts.googleapis.com/css?family=Staatliches");
-@import url("https://fonts.googleapis.com/css?family=Orbitron");
+/*@import url("https://fonts.googleapis.com/css?family=Staatliches");
+@import url("https://fonts.googleapis.com/css?family=Orbitron");*/
+
+@font-face {
+    font-family: "Karla-Regular";
+    src: url("./media/fonts/karla/Karla-Regular.woff2") format("woff2"),
+         url("./media/fonts/karla/Karla-Regular.woff") format("woff");
+  }
+
+@font-face {
+    font-family: "Karla-Bold";
+    src: url("./media/fonts/karla/Karla-Bold.woff2") format("woff2"),
+         url("./media/fonts/karla/Karla-Bold.woff") format("woff");
+  }
+@font-face {
+    font-family: "Staatliches-Regular";
+    src: url("./media/fonts/staatliches/Staatliches-Regular.woff2") format("woff2"),
+         url("./media/fonts/staatliches/Staatliches-Regular.woff") format("woff");
+  }
 
 html, body {
     background-color: #000000;
+    overflow-x: hidden; overflow-y: auto;
 }
 
 html {
@@ -11,6 +29,69 @@ html {
 
 img {
     max-width: 100%;
+}
+
+p {
+    font-family: "Karla-Regular", sans-serif;
+}
+
+h1 {
+    font-family: "Karla-Bold", sans-serif;
+    text-align: center;
+    font-size: 135%;
+}
+
+.gridcovers {
+    cursor: pointer;
+}
+
+.button {
+  font-family: "Karla-Bold", sans-serif;
+  background-color: rgb(50, 50, 50);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  cursor: pointer;
+  height: 6vh;
+}
+
+.links {
+  font-family: "Karla-Bold", sans-serif;
+  background-color: rgb(30, 30, 30);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 100%;
+}
+
+.intro {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 2em 6em 1em 6em;
+    color: #ffffff;
+    line-height: 28px;
+    font-size: 16px;
+}
+
+.connect-text {
+    display: grid;
+    grid-gap: 15px;
+    /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
+    padding: 2em 6em 1em 6em;
+    color: #ffffff;
+    line-height: 28px;
+    font-size: 16px;
+}
+
+.track-title {
+    display: grid;
+    color: #ffffff;
+    line-height: 24px;
+    font-size: 14px;
 }
 
 .header {
@@ -24,7 +105,7 @@ img {
     display: flex;
     flex-flow: column;
     color: #ffffff;
-    font-family: Staatliches;
+    font-family: "Staatliches-Regular", sans-serif;
     font-size: 32px;
     text-decoration: none;
     justify-content: space-between;
@@ -34,18 +115,20 @@ img {
 .covers {
     display: grid;
     grid-gap: 15px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
     padding: 3.5em;
+    overflow: hidden;
 }
 
 .footer {
     background: #000000;
+    overflow: hidden;
 }
 
 .nav {
     display: flex;
     background-color: #000000;
-    font-family: Staatliches;
+    font-family: "Staatliches-Regular", sans-serif;
     font-size: 18px;
     text-decoration: none;
     justify-content: space-between;
@@ -105,7 +188,7 @@ img.lg-media-buttons {
 
 /* MOBILE CONFIGURATION */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
 
 .container {
     display: flex;
@@ -120,6 +203,20 @@ img.lg-media-buttons {
     padding: 7% 0% 0% 0%;
 }
 
+.intro {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 2em 3.5em 1em 3.5em;
+    color: #ffffff;
+    line-height: 28px;
+    font-size: 16px;
+}
+
+.connect-text {
+    padding: 2em 3.5em 1em 3.5em;
+}
+
 .cover_art {
     display: none;
 }
@@ -128,7 +225,18 @@ img.cover_art {
     display: none;
 }
 
+.covers {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    padding: 3.5em;
+}
+
 img.media-buttons {
+    display: none;
+}
+
+p.social-footer-text {
     display: none;
 }
 
@@ -178,11 +286,11 @@ img.media-buttons {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    padding-top: 20%;
+    padding-bottom: 50%;
 }
 
 .artist-grid-children {
-    padding: 8% 10% 0% 10%;
+    padding: 10% 10% 0% 10%;
 }    
 
 }
@@ -190,9 +298,15 @@ img.media-buttons {
 /* TABLET CONFIGURATION */
 
 
-@media only screen and (min-width: 640px) {
+/*@media only screen and (min-width: 640px) {*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
 
-
+    .covers {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(auto, minmax(200px, 1fr));
+        padding: 3.5em;
+    }
 
     .home {
         height: auto;
@@ -250,17 +364,37 @@ body {
     display: flex;
 }
 
-.gridcovers {
-    /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
-    filter: gray; /* IE5+ */
-    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+/*.gridcovers {
+    filter: gray;
+    -webkit-filter: grayscale(1);
     -webkit-transition: all .4s ease-in-out;  
-}
+}*/
 
-.gridcovers:hover {
+/*.gridcovers:hover {
     filter: none;
       -webkit-filter: grayscale(0);
       -webkit-transform: scale(1.05);
+}*/
+
+/*.button {
+    -webkit-transition: all .4s ease-in-out;
+}
+
+.button:hover {
+    filter: none;
+    -webkit-transform: scale(1.05); 
+}*/
+
+.track-title {
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    -webkit-transition: all .4s ease-in-out;  
+}
+
+.track-title:hover {
+    filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.07);
 }
 
 .media-buttons {
@@ -273,7 +407,7 @@ body {
 .media-buttons:hover {
     filter: none;
       -webkit-filter: grayscale(0);
-      -webkit-transform: scale(1.1);
+      -webkit-transform: scale(1.35);
 }
 
 .social-media-children {
@@ -295,7 +429,7 @@ body {
 
 .artist-grid-children:hover {
     filter: none;
-      -webkit-transform: scale(1.35);
+      -webkit-transform: scale(1.1);
 }
 
 .artist-grid {
@@ -330,6 +464,7 @@ img.lg-media-buttons {
 }
 
 }
+
 /* ARTIST LOGOS */
 img.cardinalsin {
     height: 55px;
@@ -361,11 +496,39 @@ img.cardinalsin {
     padding: 0em 2em;
   }
 
+.links {
+  font-family: "Karla-Bold", sans-serif;
+  background-color: rgb(30, 30, 30);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 100%;
+  width: 20%;
+}  
+
 
 @media only screen and (min-width: 1024px) {
 
 .covers {
     padding: 2% 10% 0% 10%;
 }
+
+.intro {
+    padding: 2em 10em 1em 10em;
+}
+
+.connect-text {
+    padding: 2em 10em 1em 10em;
+}
+
+}
+
+@media only screen and (min-width: 320px) {
+   
+    .links {
+        width: 30%;
+    }
 
 }
