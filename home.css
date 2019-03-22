@@ -236,6 +236,14 @@ img.media-buttons {
     display: none;
 }
 
+img.connect-media-buttons {
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    height: auto;
+    width: 10%;
+    padding: 5% 5% 20% 5%;
+}
+
 p.social-footer-text {
     display: none;
 }
@@ -364,30 +372,10 @@ body {
     display: flex;
 }
 
-/*.gridcovers {
-    filter: gray;
-    -webkit-filter: grayscale(1);
-    -webkit-transition: all .4s ease-in-out;  
-}*/
-
-/*.gridcovers:hover {
-    filter: none;
-      -webkit-filter: grayscale(0);
-      -webkit-transform: scale(1.05);
-}*/
-
-/*.button {
-    -webkit-transition: all .4s ease-in-out;
-}
-
-.button:hover {
-    filter: none;
-    -webkit-transform: scale(1.05); 
-}*/
-
 .track-title {
     filter: gray;
     -webkit-filter: grayscale(1);
+    transition: all .4s ease-in-out;  
     -webkit-transition: all .4s ease-in-out;  
 }
 
@@ -395,12 +383,14 @@ body {
     filter: none;
       -webkit-filter: grayscale(0);
       -webkit-transform: scale(1.07);
+      transform: scale(1.07);
 }
 
 .media-buttons {
     /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
     filter: gray; /* IE5+ */
     -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+    transition: all .4s ease-in-out;  
     -webkit-transition: all .4s ease-in-out;  
 }
 
@@ -408,6 +398,7 @@ body {
     filter: none;
       -webkit-filter: grayscale(0);
       -webkit-transform: scale(1.35);
+      transform: scale(1.35);
 }
 
 .social-media-children {
@@ -415,21 +406,25 @@ body {
     filter: gray; /* IE5+ */
     -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
     -webkit-transition: all .4s ease-in-out;  
+    transition: all .4s ease-in-out;  
 }
 
 .social-media-children:hover {
     filter: none;
       -webkit-filter: grayscale(0);
       -webkit-transform: scale(1.5);
+      transform: scale(1.5);
 }
 
 .artist-grid-children {
     -webkit-transition: all .4s ease-in-out;  
+    transition: all .4s ease-in-out;  
 }
 
 .artist-grid-children:hover {
     filter: none;
       -webkit-transform: scale(1.1);
+      transform: scale(1.1);
 }
 
 .artist-grid {
@@ -521,6 +516,10 @@ img.cardinalsin {
 
 .connect-text {
     padding: 2em 10em 1em 10em;
+}
+
+img.connect-media-buttons {
+    display: none;
 }
 
 }
